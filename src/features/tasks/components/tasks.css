@@ -1,0 +1,11 @@
+.task-item:hover {
+  background-color: rgba(66, 66, 66, 0.4);
+}
+.task-item {
+  text-transform: capitalize;
+}
+.tasks-completed {
+  position: relative;
+  top: 3rem;
+  background: aqua;
+}
