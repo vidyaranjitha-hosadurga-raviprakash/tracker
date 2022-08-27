@@ -33,10 +33,10 @@ function* handleAddTask(action) {
     const { payload } = action;
     const { data } = yield call(api.postTaskDB, payload);
     yield put(addTaskSuccess(data));
-    toast.success("Add task success!");
+    toast.success("Task added!");
   } catch (error) {
     yield put(addTaskFail(error.task));
-    toast.error("Add task failed!");
+    toast.error("Task add failed!");
   }
 }
 
@@ -52,7 +52,7 @@ export function* handleUpdateTask(action) {
     yield put(updateTaskSuccess(data));
   } catch (error) {
     yield put(updateTaskFail(error.task));
-    toast.error("Update task failed!");
+    toast.error("Task update failed!");
   }
 }
 
@@ -64,13 +64,12 @@ export function* watchUpdateTask() {
 export function* handleDeleteTask(action) {
   try {
     const { payload } = action;
-    console.log("handleDeleteTask : payload =============== ", payload);
     const { data } = yield call(api.deleteTaskDB, payload);
     yield put(deleteTaskSuccess(data));
-    toast.success("Task deletion successful!");
+    toast.success("Task deleted!");
   } catch (error) {
     yield put(deleteTaskFail(error.task));
-    toast.error("Failed to delete task!");
+    toast.error("Taks delete failed!");
   }
 }
 export function* watchDeleteTask() {
