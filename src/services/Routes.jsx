@@ -50,7 +50,6 @@ export const Routes = () => {
   useEffect(() => {
     if (isLoggedIn && !appRendered.current) {
       appRendered.current = true;
-      console.log("routing to home");
       navigate(routesPath.HOME_PAGE);
     }
   }, [isLoggedIn, navigate]);
