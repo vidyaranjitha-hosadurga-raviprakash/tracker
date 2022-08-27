@@ -9,7 +9,6 @@ export const getMesssagingTokenAndId = async () => {
     vapidKey: process.env.REACT_APP_FIREBASE_VAPID_KEY,
   })
     .then((currentToken) => {
-      console.log("currentToken = ", currentToken);
       response.success = true;
       response.token = currentToken;
       response._id = generateSubscriptionId(currentToken);

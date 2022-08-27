@@ -1,4 +1,5 @@
 Open Issues : 
 - After logout, not landing to landing page. Error 404 - Fixed
+- On refresging/reloading the page, facing Error 404 : page not found 
 
 
