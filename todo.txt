@@ -1,4 +1,4 @@
-Issues : 
-- After logout, not landing to landing page. Error 404
+Open Issues : 
+- After logout, not landing to landing page. Error 404 - Fixed
 
 

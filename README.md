@@ -2,9 +2,10 @@
 
 This web application is a digital task tracker. It allows to add/update/delete tasks. Additionally, subscribers will get the push notifications on status of the tasks.
 
-**Live link : [trackaround](https://trackaround.netlify.app/)**
+**Live link : [trackaround](https://trackaround.netlify.app/)**  [![Netlify Status](https://api.netlify.com/api/v1/badges/e31a5798-6d85-4cc7-a626-72f6f81d1636/deploy-status)](https://trackaround.netlify.app/)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e31a5798-6d85-4cc7-a626-72f6f81d1636/deploy-status)](https://trackaround.netlify.app/)
+
+**Tech-stack :** React.js, MUI, Express.js, Firebase, mongoDB 
 
 ## Table of Contents
 
