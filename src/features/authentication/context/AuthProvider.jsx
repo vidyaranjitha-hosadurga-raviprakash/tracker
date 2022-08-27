@@ -88,7 +88,7 @@ const AuthProvider = ({ children }) => {
   const signout = async () => {
     try {
       localStorage.removeItem("token");
-      await signOut(auth)
+      return await signOut(auth)
         .then(() => toast.success("Logged Out Successfully!"))
         .catch((error) => {
           console.error("Failed to signout user, ", error);

@@ -1,11 +1,4 @@
-// const firebaseConfig = {
-//   apiKey: "AIzaSyDqLafqqkhdX32QbZ7q8NWTDnzFmPz2ons",
-//   authDomain: "track-us-dc036.firebaseapp.com",
-//   databaseURL:
-//     "https://track-us-dc036-default-rtdb.europe-west1.firebasedatabase.app",
-//   projectId: "track-us-dc036",
-//   storageBucket: "track-us-dc036.appspot.com",
-//   messagingSenderId: "156141524497",
-//   appId: "1:156141524497:web:7ba1e767643bfaf5aa43b0",
-//   measurementId: "G-QYPSPK30C2",
-// };
+Issues : 
+- After logout, not landing to landing page. Error 404
+
+

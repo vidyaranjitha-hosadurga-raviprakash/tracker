@@ -28,8 +28,9 @@ export const generateSubscriptionId = (token) => {
 export const sendNotification = async (notificationDetails) => {
   const { data } = await api.getAllSubscriptions();
 
-  // Return when no subsribers
+  // When no subsribers return  else send push notifications to all the subscribers
   if (!data.length) {
+    console.log("No subscription");
     return;
   }
   const subscribersTokens = data.map((subscription) => subscription.token);

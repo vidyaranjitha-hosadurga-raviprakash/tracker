@@ -78,6 +78,7 @@ const Tasks = () => {
   const tasksDisplay = (tasksStatus) => {
     const taskList =
       tasksStatus === TASK_COMPLETE ? completedTasks : inCompleteTasks;
+
     return (
       <Grid container item direction="column">
         {taskList.map((task) => {

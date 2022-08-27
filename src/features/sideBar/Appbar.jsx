@@ -136,7 +136,7 @@ export const Appbar = ({ open, handleDrawerOpen }) => {
           <IconButton
             onClick={() => {
               signout();
-              window.location.reload();
+              // window.location.reload();
             }}
           >
             <LogoutIcon fontSize="medium" />

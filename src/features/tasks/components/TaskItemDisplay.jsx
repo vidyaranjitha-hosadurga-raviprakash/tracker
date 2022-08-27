@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Grid, Typography, IconButton } from "@mui/material";
 import {
   Delete as DeleteIcon,
@@ -12,6 +12,10 @@ export const TaskItemDisplay = ({
   restoreCompletedTask,
 }) => {
   const { _id, status, title } = task;
+
+  // When task is marked done,display the toggle on for few seconds before moving the task to completed section.
+  const [snapshotSwitchStatus, setSnapshotSwitchStatus] = useState(status);
+
   return (
     <Grid
       container
@@ -35,10 +39,11 @@ export const TaskItemDisplay = ({
       </Grid>
       <Grid item>
         <IOSSwitch
-          checked={status}
+          checked={status || snapshotSwitchStatus}
           disabled={status}
           onChange={() => {
-            updateTask(_id);
+            setSnapshotSwitchStatus(!snapshotSwitchStatus);
+            setTimeout(() => updateTask(_id), 800);
           }}
         ></IOSSwitch>
       </Grid>
