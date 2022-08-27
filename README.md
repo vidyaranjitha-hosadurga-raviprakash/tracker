@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# trackaround
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This web application is a digital task tracker. It allows to add/update/delete tasks. Additionally, subscribers will get the push notifications on status of the tasks.
 
-## Available Scripts
+**Live link : [trackaround](https://trackaround.netlify.app/)**
 
-In the project directory, you can run:
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e31a5798-6d85-4cc7-a626-72f6f81d1636/deploy-status)](https://trackaround.netlify.app/)
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. [Features](#features)
+2. [Reference](#reference)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Authentication
+   - SignUp
+   - SignIn/SignIn with google
+   - SignOut
+2. Provides add/update/delete the task/tasks
+3. Allows to restore the completed task.
+3. Subscribe/Unsubscribe for the push notification.
+4. Upon toggling the switch(which marks task completion) for a given task, dispatching the push notification to all subscribers signifying the task completion.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Reference
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Resources that helped during development:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Firebase](https://firebase.google.com/)
+- [ReactJS](https://reactjs.org/)
+- [Material UI](https://mui.com/)
+- [ExpressJS](https://expressjs.com/)
+- [MongoDB](https://www.mongodb.com/atlas)
+- **npm packages**
+  - [Firebase](https://www.npmjs.com/package/firebase)
+  - [Redux](https://www.npmjs.com/package/redux)
+  - [Redux-saga](https://www.npmjs.com/package/redux-saga)
+  - [React routes](https://www.npmjs.com/package/react-router-dom)
+  - [React toastify library](https://www.npmjs.com/package/react-toastify)
+  - [Axios](https://www.npmjs.com/package/axios)
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
