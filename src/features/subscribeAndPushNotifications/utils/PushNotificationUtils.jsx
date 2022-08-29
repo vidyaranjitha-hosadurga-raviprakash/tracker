@@ -4,7 +4,7 @@ import { getToken } from "firebase/messaging";
 import * as api from "features/subscribeAndPushNotifications/services/api";
 
 export const getMesssagingTokenAndId = async () => {
-  const response = { success: false, token: "", _id: "" };
+  const response = { success: false, token: "", _id: "", error: "" };
   await getToken(messaging, {
     vapidKey: process.env.REACT_APP_FIREBASE_VAPID_KEY,
   })
@@ -14,6 +14,7 @@ export const getMesssagingTokenAndId = async () => {
       response._id = generateSubscriptionId(currentToken);
     })
     .catch((err) => {
+      response.error = err;
       console.log("Error while fetching the messaging token, error = ", err);
     });
   return response;

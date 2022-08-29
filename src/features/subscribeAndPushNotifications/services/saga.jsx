@@ -28,9 +28,10 @@ export function* watchAddSubscription() {
 }
 
 function* handleFetchSubscription() {
-  const { success, _id } = yield getMesssagingTokenAndId();
+  const { success, _id, error } = yield getMesssagingTokenAndId();
   if (!success) {
-    return toast.error("Error while fetching the subscription status");
+    // return toast.error("Error while fetching the subscription status");
+    return toast.error("error = ", error);
   }
   const { data } = yield call(api.getSubscription, _id);
 
