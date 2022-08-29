@@ -47,7 +47,7 @@ const Subscribe = () => {
   };
 
   return (
-    <Box sx={{ padding: "2rem 0rem" }}>
+    <Box sx={{ padding: "1rem 0rem 5rem 0rem" }}>
       <Button
         variant="contained"
         onClick={(e) => subscribeOrUnsubcribe(e.target.innerText)}

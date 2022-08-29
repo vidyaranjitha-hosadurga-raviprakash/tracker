@@ -99,10 +99,10 @@ const Tasks = () => {
   return (
     <Box sx={{ minHeight: "40vh" }}>
       {loading && <Loader progressLabelName={progressLabelName} />}
-      <Grid container direction="column" spacing={5} mt={2}>
+      <Grid container direction="column" spacing={3} mt={2}>
         <Grid item sx={{ padding: "1rem 1rem" }}>
           <Grid container item justifyContent="center">
-            <Grid item xs={9} sm={6} md={6} lg={7} xl={9}>
+            <Grid item xs={8} sm={8} md={8} lg={7} xl={9}>
               <TextField
                 label="Type task"
                 variant="standard"

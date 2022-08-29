@@ -27,7 +27,7 @@ export const TaskItemDisplay = ({
       alignItems="center"
     >
       <Grid item component="li" sx={{ width: "1.5rem" }}></Grid>
-      <Grid item xs={5} sm={7} md={7} lg={8} xl={9}>
+      <Grid item xs={5} sm={8} md={8} lg={8} xl={9}>
         <Typography
           sx={{
             wordBreak: "break-all",
@@ -58,7 +58,7 @@ export const TaskItemDisplay = ({
         </IconButton>
       </Grid>
 
-      <Grid item sx={{ flex: 1 }}>
+      <Grid item>
         {status && (
           <IconButton
             size="medium"
