@@ -30,7 +30,7 @@ export const TaskItemDisplay = ({
       <Grid item xs={5} sm={8} md={8} lg={8} xl={9}>
         <Typography
           sx={{
-            wordBreak: "break-all",
+            wordBreak: "break-word",
           }}
           variant="body1"
         >
