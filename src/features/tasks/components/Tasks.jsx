@@ -36,9 +36,6 @@ const Tasks = () => {
   const [inputTask, setInputTask] = useState(INITIAL_STATE);
   const { currentUser } = useAuth();
 
-  const inCompleteTasks = tasks.filter(
-    (task) => task.status === TASK_INCOMPLETE
-  );
   const completedTasks = tasks.filter((task) => task.status === TASK_COMPLETE);
 
   useEffect(() => {
@@ -76,8 +73,7 @@ const Tasks = () => {
   };
 
   const tasksDisplay = (tasksStatus) => {
-    const taskList =
-      tasksStatus === TASK_COMPLETE ? completedTasks : inCompleteTasks;
+    const taskList = tasks.filter((task) => task.status === tasksStatus);
 
     return (
       <Grid container item direction="column">

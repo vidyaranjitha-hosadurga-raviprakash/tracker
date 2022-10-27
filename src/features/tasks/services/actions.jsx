@@ -1,5 +1,6 @@
 import * as actionTypes from "features/tasks/services/actionTypes";
 
+// Action creators should return plain action object with type as it's property. payload is optional.
 export const fetchTaskAction = () => ({
   type: actionTypes.FETCH_TASK_REQUESTED,
 });
